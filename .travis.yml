@@ -1,0 +1,14 @@
+language: node_js
+node_js: stable
+branches:
+  only:
+  - master
+addons:
+  ssh_known_hosts:
+  - 101.132.172.137
+install:
+- npm install
+script:
+- npm run build
+after_success:
+- rsync -az --delete ./dist/* 101.132.172.137:/usr/share/nginx/html/
