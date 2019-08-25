@@ -1,3 +1,3 @@
 module.exports = {
-  baseUrl: '/outpatient/'
+  baseUrl: '/test-travis/'
 }
