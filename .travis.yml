@@ -14,5 +14,5 @@ install:
 script:
 - npm run build
 after_success:
-# - rsync  ./dist/* root@101.132.172.137:/usr/share/nginx/html/test-travis/
-- rsync -az --delete ./dist/* root@101.132.172.137:/usr/share/nginx/html/test-travis/
+- ssh  ./dist/* root@101.132.172.137:/usr/share/nginx/html/test-travis/
+# - rsync -az --delete ./dist/* root@101.132.172.137:/usr/share/nginx/html/test-travis/
