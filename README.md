@@ -1,3 +1,4 @@
+![image](https://api.travis-ci.org/Hufe921/test-travis.svg?branch=master)
 # test-travis
 
 ## Project setup
