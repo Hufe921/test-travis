@@ -12,3 +12,6 @@ script:
 - npm run build
 after_success:
 - ssh ./dist/* 101.132.172.137:/usr/share/nginx/html/test-travis/
+before_install:
+- openssl aes-256-cbc -K $encrypted_9210b3126f4f_key -iv $encrypted_9210b3126f4f_iv
+  -in deploy_rsa.enc -out deploy_rsa -d
